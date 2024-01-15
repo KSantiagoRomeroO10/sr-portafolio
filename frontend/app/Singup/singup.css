@@ -1,0 +1,7 @@
+/* @import '../general.scss'; */
+.Singup{
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}

@@ -1,0 +1,58 @@
+/* @import 'general.scss'; */
+
+body{
+  background: var(--bg1);
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.hs {
+  width: 38%;
+}
+
+.h1, .h2, .h3{
+  font-size: 70px;
+  transition: 0.5s;
+}
+
+.h1{
+  color: white;
+}
+
+.h2, .h3{
+  color: var(--red);
+}
+
+.presentation{
+  float: left;
+  display: grid;
+  place-items: center;
+}
+
+.description{
+  float: right;
+  display: grid;
+  place-items: center;
+}
+
+.description p{
+  width: 70%;
+}
+
+.description h1{
+  text-align: center;
+}
+
+.presentation, .description{
+  width: 50vw;
+  height: 100vh;
+}
+
+.h1:hover, .h2:hover, .h3:hover{
+  margin-left: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}

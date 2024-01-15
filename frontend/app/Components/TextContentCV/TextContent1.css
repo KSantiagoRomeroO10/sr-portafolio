@@ -1,0 +1,16 @@
+/* @import '@/app/general.scss'; */
+
+.TextContent1{
+  background: var(--bg2);
+  padding: 50px;
+  border-radius: 5px;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+@media (max-width: 800px) {
+  .TextContent2{
+    width: 75vw;
+    grid-column: 1/4;
+  }  
+}

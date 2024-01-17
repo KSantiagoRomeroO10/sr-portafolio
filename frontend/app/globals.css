@@ -1,6 +1,39 @@
 /* Importar Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poltawski+Nowy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+  
+  /* Colores principales */
+  --red: #A81212;
+  --purple: #720D5D;
+
+  /* Paleta de colores oscuro */
+  --bg1: #1A1C2C;  /* Azul oscuro */
+  --bg2: #181a1b;  /* Gris Oscuro */
+  --bg3: #191B24; /* Morado Oscuro */
+  --bg4: #212425;
+  --bg5: #595959;
+  --bg6: #979797;
+  --bg7: #2C1A2C;
+
+  /* Color y tamaño de los deliniados inferiores */
+
+  --border-bottom: 2px solid var(--red)
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body{
+  background-color: var(--bg1);
+  background-size: 60px 60px;
+  background-position: 0 0,30px 30px;
+}
+
 h1, h2, h3{
   font-family: 'Amatic SC'; /* Poltawski Nowy /400 regular & italic/ /700 bold & italic/; */
   font-style: italic;
@@ -17,42 +50,3 @@ p{
   font-family: 'Poltawski Nowy', serif;
   font-weight: 400;
 }
-
-
-:root{
-  
-  /* Colores principales */
-  --red: #A81212;
-  --purple: #720D5D;
-
-  /* Paleta de colores oscuro */
-  --bg1: #1A1C2C;  /* Azul oscuro */
-  --bg2: #181a1b;  /* Gris Oscuro */
-  --bg3: #191B24; /* Morado Oscuro */
-  --bg4: #212425;
-  --bg5: #595959;
-  --bg6: #979797;
-  --bg7: #2C1A2C;
-
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-body{
-  background-color: var(--bg1);
-  background-size: 60px 60px;
-  background-position: 0 0,30px 30px;
-}
-
-
-/* h1, h2, h3{
-  @include fontTittles1;
-} */
-
-/* p{
-  @include pararfos;
-} */

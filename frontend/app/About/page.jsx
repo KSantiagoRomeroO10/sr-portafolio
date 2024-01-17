@@ -3,9 +3,8 @@ import Button1 from '@/app/Components/Buttons/Button1'
 
 import Index  from '@/app/Components/TextContentCV/Index'
 
-import Sections from './info'
-
-import { Metadata } from 'next'
+import Sections from './Sections'
+import InfoBasic from './InfoBasic'
  
 export const metadata = {
   title: 'About me'
@@ -33,7 +32,7 @@ const CV = () => {
         ))
       }/>
 
-      <Index Sections={Sections}/>
+      <Index Sections={Sections} InfoBasic={InfoBasic}/>
 
     </>
   )

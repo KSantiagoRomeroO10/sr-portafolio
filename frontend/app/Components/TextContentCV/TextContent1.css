@@ -8,6 +8,23 @@
   grid-column: 1/2;
 }
 
+.imageMain{
+  width: 150px;
+  height: 150px;
+  background-color: var(--bg1);
+  border: var(--border-bottom);
+  margin: auto;
+  /* Imagen y sus confiiguraciones */
+  border-radius: 50%;
+  background-image: url('/astronauta.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bordeInferior{
+  border-color: var(--red);
+}
+
 @media (max-width: 800px) {
   .TextContent2{
     width: 75vw;

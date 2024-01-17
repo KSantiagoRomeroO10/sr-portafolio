@@ -8,6 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
     <html lang="es">
+      <head><link rel="icon" href="/icon-portfolio.svg" type="image/svg+xml" /></head>
       <body>{children}</body>
     </html>
   )

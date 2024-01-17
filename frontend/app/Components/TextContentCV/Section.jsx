@@ -1,15 +1,30 @@
 'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
 import './Section.css'
 
 const Section = ( {Sections} ) => {
     
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1)
 
   const handleClick = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+    setCurrentPage(pageNumber)
+  }
+
+  const academyHistory = Sections.map((section) => {
+    if(Array.isArray(section.text)){
+      const academicElement = section.text.map((academic) => {
+        return(
+          <div>
+            <h3>{ academic.tittle }</h3>
+            <p>{ academic.date }</p>
+            <br />
+          </div>
+        )
+      })
+      return academicElement
+    }
+  })
 
   return (
     <section className='paginated-div'>
@@ -31,13 +46,13 @@ const Section = ( {Sections} ) => {
         {Sections.map((section) => (
 
           <div key={section.id} className={`page ${section.id === currentPage ? 'active' : ''}`}>
-            <h2>{ section.title }</h2>
+            <h2 className='tituloSections'>{ section.title }</h2>
             
             <br/>
-            <hr/>
             <br/>
 
-            <p>{ section.text }</p>
+            <p>{ !Array.isArray(section.text) ? section.text : academyHistory }</p>
+
           </div>
 
         ))}
@@ -48,4 +63,4 @@ const Section = ( {Sections} ) => {
 
 }
 
-export default Section;
+export default Section

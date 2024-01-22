@@ -7,27 +7,29 @@ body{
   height: 100vh;
 }
 
-.hs {
-  width: 38%;
-}
-
 .h1, .h2, .h3{
-  font-size: 70px;
   transition: 0.5s;
 }
 
-.h1{
-  color: white;
+.h2, .h3{
+  font-size: 50px;
+  color: var(--red);
 }
 
-.h2, .h3{
-  color: var(--red);
+.h1{
+  font-size: 60px;
+  color: white;
 }
 
 .presentation{
   float: left;
   display: grid;
   place-items: center;
+  align-items: center;
+}
+
+.hs{
+  width: 45%;
 }
 
 .description{

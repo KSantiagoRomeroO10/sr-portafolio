@@ -1,6 +1,6 @@
 .TextContent1{
   background: var(--bg2);
-  padding: 50px;
+  padding: 40px;
   border-radius: 5px;
   grid-row: 1;
   grid-column: 1/2;
@@ -24,7 +24,7 @@
 }
 
 @media (max-width: 800px) {
-  .TextContent2{
+  .TextContent1{
     width: 75vw;
     grid-column: 1/4;
   }  

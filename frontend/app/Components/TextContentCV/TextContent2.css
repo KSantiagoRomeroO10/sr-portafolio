@@ -1,6 +1,6 @@
 .TextContent2{
   background: var(--bg2);
-  padding: 50px;
+  padding: 40px;
   border-radius: 5px;
   min-height: 50vh;
   grid-row: 1;

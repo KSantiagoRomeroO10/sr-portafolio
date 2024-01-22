@@ -1,7 +1,7 @@
 .align{
-  margin: 30px;
+  margin: 15px;
   display: grid;
-  gap: 30px;
+  gap: 15px;
   grid-template-rows: auto;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: repeat(3, 1fr);
@@ -19,15 +19,3 @@
     width: 65vw;
   }  
 }
-
-/*
-.align{
-  display: grid;
-  gap: 15px;
-  margin: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-hay que comentar esto grid-column: 1/2; en TextContent1 y TextContent2
-*/

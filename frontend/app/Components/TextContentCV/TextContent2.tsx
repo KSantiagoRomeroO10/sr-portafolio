@@ -13,4 +13,3 @@ const TextContent2: React.FC<TextContent2Props> = ({ section }) => {
 };
 
 export default TextContent2;
-

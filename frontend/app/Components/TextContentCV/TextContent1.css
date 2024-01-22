@@ -4,6 +4,7 @@
   border-radius: 5px;
   grid-row: 1;
   grid-column: 1/2;
+  text-align: center;
 }
 
 .imageMain{

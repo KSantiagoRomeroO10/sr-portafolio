@@ -23,7 +23,8 @@ const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
       return section.text.map((academic) => (
         <div key={academic.tittle}>
           <h3>{academic.tittle}</h3>
-          <p>{academic.date}</p>
+          <br />
+          <p>- {academic.date}</p>
           <br />
         </div>
       ));
@@ -57,7 +58,7 @@ const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
             <br />
             <div>
               {!Array.isArray(section.text) ? (
-                section.text
+                <p>{section.text}</p>
               ) : (
                 academyHistory
               )}

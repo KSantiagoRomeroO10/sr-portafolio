@@ -11,11 +11,11 @@ const TextContent1: React.FC<{ InfoBasic: InfoBasic }> = ({ InfoBasic }) => {
       <hr className='bordeInferior' />
       <br />
 
-      <p>{InfoBasic.developer}</p>
+      <p>{InfoBasic.name}</p>
 
       <br />
 
-      <p>{InfoBasic.name}</p>
+      <p>{InfoBasic.developer}</p>
 
       <br />
 
@@ -23,13 +23,9 @@ const TextContent1: React.FC<{ InfoBasic: InfoBasic }> = ({ InfoBasic }) => {
 
       <br />
       <h2>Contact me</h2>
-      <br />
-
+      
       <p>{InfoBasic.correo}</p>
 
-      <br />
-
-      <p>{InfoBasic.fechaNacimiento}</p>
     </aside>
   );
 };

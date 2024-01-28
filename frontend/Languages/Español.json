@@ -1,0 +1,32 @@
+{
+  "AcademicHistory": {
+    "Id": 1,
+    "Title": "Historial Academico",
+    "AcademicHistoryDetail": [
+      {
+        "Title": "Ingeniería de sistemas y computación",
+        "Date": "Universidad de Cundinamarca, 2020 – en curso"
+      },
+      {
+        "Title": "Tecnólogo en análisis y desarrollo de software",
+        "Date": "Sena, 2023 – en curso"
+      },
+      {
+        "Title": "Técnico en programación",
+        "Date": "Sena, 2017 – 2019"
+      }
+    ]
+  },
+  "ProfessionalProfile": {
+    "Title": "Perfil profesional",
+    "Text": "Estudiante de ingeniería de sistemas de 9 semestre, dispuesto a aprender todos los días algo nuevo, y sobre todo en la programación. Soy una persona responsable, adaptable al cambio, honesta, comprometida, con mucha facilidad para aprender y afrontar retos."
+  },
+  "Skills&Abilities": {
+    "Title": "Habilidades y aptitudes",
+    "Text": "Soy una persona que se desenvuelve muy fácilmente con la tecnología y herramientas digitales, ya que logro entender las cosas con facilidad. Cuento con conocimientos en temas de programación como estructuras de datos, grafos, diferentes patrones de diseño, diferentes paradigmas de programación, programación dinámica y estática."
+  },
+  "MainDescription": {
+    "Part1": "Soy desarrollador FullStack. Mi pasión por la tecnología se intensificó cuando descubrí la pogramación. Me encantaba el reto de crear algo nuevo a partir de cero. Me sentía como un mago, capaz de transformar mis ideas en realidad.",
+    "Part2": "Como desarrollador FullStack, tengo la oportunidad de trabajar en ambos lados del desarrollo web: el frontend y el backend. Esto me permite tener una visión completa del proceso de desarrollo y crear aplicaciones que sean tanto funcionales como atractivas."
+  } 
+}

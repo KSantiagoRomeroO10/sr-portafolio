@@ -3,8 +3,8 @@ import TextContent1 from './TextContent1';
 import TextContent2 from './TextContent2';
 import Section from './Section';
 
-import { SectionInfo } from '@/app/Sections';
-import { InfoBasic } from '@/app/InfoBasic';
+import { SectionInfo } from '@/app/About/Sections';
+import { InfoBasic } from '@/app/About/InfoBasic';
 
 interface IndexProps {
   Sections: SectionInfo[];

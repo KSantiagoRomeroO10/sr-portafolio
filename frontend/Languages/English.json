@@ -1,0 +1,34 @@
+{
+  "AcademicHistory": {
+    "Id": 1,
+    "Title": "Academic History",
+    "Text": [
+      {
+        "Title": "Computer Systems Engineering",
+        "Date": "University of Cundinamarca, 2020 – Ongoing"
+      },
+      {
+        "Title": "Software Analysis and Development Technologist",
+        "Date": "Sena, 2023 – Ongoing"
+      },
+      {
+        "Title": "Programming Technician",
+        "Date": "Sena, 2017 – 2019"
+      }
+    ]
+  },
+  "ProfessionalProfile": {
+    "Id": 2,
+    "Title": "Professional Profile",
+    "Text": "Ninth semester student of computer systems engineering, willing to learn something new every day, especially programming. I am a responsible, adaptable, honest, and committed person with great ease to learn and face challenges."
+  },
+  "SkillsAndAbilities": {
+    "Id": 3,
+    "Title": "Skills & Aptitudes",
+    "Text": "I'm a person who easily handles technology and digital tools, as I can easily understand things. I have knowledge of programming topics such as data structures, graphs, different design patterns, different programming paradigms, dynamic and static programming."
+  },
+  "MainDescription": {
+    "Part1": "I'm a FullStack developer. My passion for technology intensified when I discovered programming. I loved the challenge of creating something new from scratch. I felt like a wizard, able to transform my ideas into reality.",
+    "Part2": "As a FullStack developer, I have the opportunity to work on both sides of web development: the frontend and the backend. This allows me to have a complete view of the development process and create applications that are both functional and attractive."
+  }
+}

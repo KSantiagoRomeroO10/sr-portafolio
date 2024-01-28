@@ -3,15 +3,9 @@
 import { useState } from 'react';
 import './Section.css';
 
-import { AcademicHistory } from '@/app/Sections'
+import ProfileSection from '@/Languages/Interfaces/About/ProfileSection';
 
-interface SectionData {
-  id: number;
-  title: string;
-  text: string | AcademicHistory[];
-}
-
-const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
+const Section: React.FC<{ Sections: ProfileSection[] }> = ({ Sections }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const handleClick = (pageNumber: number) => {
@@ -19,12 +13,12 @@ const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
   };
 
   const academyHistory = Sections.map((section) => {
-    if (Array.isArray(section.text)) {
-      return section.text.map((academic) => (
-        <div key={academic.tittle}>
-          <h3>{academic.tittle}</h3>
+    if (Array.isArray(section.Text)) {
+      return section.Text.map((academic) => (
+        <div key={academic.Title}>
+          <h3>{academic.Title}</h3>
           <br />
-          <p>- {academic.date}</p>
+          <p>- {academic.Date}</p>
           <br />
         </div>
       ));
@@ -38,11 +32,11 @@ const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
       <div className="pagination">
         {Sections.map((section) => (
           <button
-            key={section.id}
-            className={`page-button ${section.id === currentPage ? 'active' : ''}`}
-            onClick={() => handleClick(section.id)}
+            key={section.Id}
+            className={`page-button ${section.Id === currentPage ? 'active' : ''}`}
+            onClick={() => handleClick(section.Id)}
           >
-            {section.id}
+            {section.Id}
           </button>
         ))}
       </div>
@@ -50,15 +44,15 @@ const Section: React.FC<{ Sections: SectionData[] }> = ({ Sections }) => {
       <div className="content">
         {Sections.map((section) => (
           <div
-            key={section.id}
-            className={`page ${section.id === currentPage ? 'active' : ''}`}
+            key={section.Id}
+            className={`page ${section.Id === currentPage ? 'active' : ''}`}
           >
-            <h2 className="tituloSections">{section.title}</h2>
+            <h2 className="tituloSections">{section.Title}</h2>
             <br />
             <br />
             <div>
-              {!Array.isArray(section.text) ? (
-                <p>{section.text}</p>
+              {!Array.isArray(section.Text) ? (
+                <p>{section.Text}</p>
               ) : (
                 academyHistory
               )}

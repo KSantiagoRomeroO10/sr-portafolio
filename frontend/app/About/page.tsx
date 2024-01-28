@@ -4,8 +4,8 @@ import Navbar from '@/app/Components/Navbar/Navbar';
 import Button1 from '@/app/Components/Buttons/Button1';
 import Index from '@/app/Components/TextContentCV/Index';
 
-import Sections from '../Sections';
-import InfoBasic from '../InfoBasic';
+import Sections from './Sections';
+import InfoBasic from './InfoBasic';
 
 import { ButtonProps } from '@/app/Components/Buttons/Button1'
 
@@ -19,7 +19,7 @@ const CV: React.FC = () => {
     { text: 'Projects', route: 'Projects' },
     { text: 'Learn', route: 'Learn' },
   ];
-
+    
   return (
     <>
       <Navbar buttons={Buttons.map((button, index) => (
